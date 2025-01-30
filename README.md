@@ -63,7 +63,3 @@ This repository contains a script (`setup.sh`) that automates installing and con
 ## Contributing
 
 Feel free to open issues or pull requests to improve or extend this script for your own use cases or to help others.
-
-## License
-
-You can include a license of your choice here (MIT, Apache 2.0, etc.) if you plan to share this repository publicly.
