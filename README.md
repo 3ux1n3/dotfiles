@@ -67,7 +67,3 @@ Feel free to open issues or pull requests to improve or extend this script for y
 ## License
 
 You can include a license of your choice here (MIT, Apache 2.0, etc.) if you plan to share this repository publicly.
-
----
-
-That’s it! With this README, anyone can quickly see what your script does and how to run it. Enjoy your automated macOS setup!
