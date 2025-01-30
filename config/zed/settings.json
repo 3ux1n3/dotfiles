@@ -1,0 +1,111 @@
+{
+  "features": {
+      "copilot": false,
+      "inline_completion_provider": "none"
+    },
+  "language_models": {
+    "openai": {
+      "version": "1",
+      "available_models": []
+    }
+  },
+  "auto_update_extensions": {
+    "liquid": false
+  },
+  "terminal": {
+    "dock": "bottom",
+    "detect_venv": { "on": { "activate_script": "fish" }}
+  },
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-20240620"
+    },
+    "dock": "right",
+    "version": "2",
+    "provider": null
+  },
+  "ui_font_family": "JetBrainsMono Nerd Font Mono",
+  "buffer_font_family": "JetBrainsMono Nerd Font Mono",
+  "theme": "Andromeda",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "remove_trailing_whitespace_on_save": false,
+  "ensure_final_newline_on_save": true,
+  "git": {
+    // https://zed.dev/docs/configuring-zed#git
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": true,
+      "position": "right"
+    }
+  },
+  "tabs": {
+      // https://zed.dev/docs/configuring-zed#editor-tabs
+      "show_icons": true,
+      "git_status": true,
+      "close_position": "right"
+    },
+
+  // Panels
+  "project_panel": {
+    // https://zed.dev/docs/configuring-zed#project-panel
+    "default_width": 225,
+    "button": true,
+    "dock": "left",
+    "git_status": true
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  
+  "notification_panel": {
+    "button": false
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "auto_update": true,
+  "format_on_save": "on",
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
+  "lsp": {
+     "gopls": {
+       "gofumpt": true,
+       "initialization_options": {
+         "directoryFilters": ["-**/node_modules", "-**/.git"],
+         "gofumpt": true,
+         "symbolScope": "workspace",
+         "staticcheck": true,
+         "templateExtensions": ["tmpl"],
+         "analyses": {
+           "nilness": true,
+           "unusedparams": true,
+           "unusedvariable": true,
+           "unusedwrite": true,
+           "useany": true
+         },
+         "codelenses": {
+           "gc_details": true
+         }
+       }
+     }
+   },
+   "chat_panel": {
+     "button": false
+   },
+   "language_overrides": {
+       "Go": {
+           "formatter": {
+               "external": {
+                   "command": "goimports",
+                   "arguments": []
+               }
+           }
+       }
+   }
+}

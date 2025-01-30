@@ -1,0 +1,24 @@
+
+[font]
+size = 16.0
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+
+
+[window]
+decorations = "Transparent"
+startup_mode = "Maximized"
+position = { x = 0, y = 0 }
+padding = { x = 20, y = 20 }
+dynamic_padding = true
+opacity = 0.8
+blur = true
+dynamic_title = true
+option_as_alt = "Both"
+
+[general]
+import = ["~/.config/alacritty/themes/themes/dracula.toml"]
+
+[terminal]
+
+[terminal.shell]
+program = "/opt/homebrew/bin/fish"
