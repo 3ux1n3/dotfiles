@@ -1,7 +1,3 @@
-Below is a **revised README** that aligns with your script’s behavior—namely, the script handles **Homebrew**, **Brewfile**, and **mas** installations automatically, so there’s no need for extra user steps on that front.
-
----
-
 # macOS Automated Setup
 
 This repository contains a script (`setup.sh`) that automates installing and configuring common tools, shell configurations, and system preferences on a fresh macOS installation.
